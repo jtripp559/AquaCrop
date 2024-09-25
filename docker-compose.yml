@@ -1,0 +1,16 @@
+services:
+  aquacrop:
+    networks:
+      - internal
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aquacrop_docker
+    volumes:
+      - .:/AquaCrop
+    # command: ./aquacrop
+    stdin_open: true  # Keep stdin open even if not attached
+    tty: true         # Allocate a pseudo-TTY
+networks:
+  internal:
+    driver: bridge

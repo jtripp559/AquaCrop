@@ -8,3 +8,10 @@ __pycache__
 tests/tmp*
 tests/log*.txt
 *.swp
+nbs/
+
+# AquaCrop Input and Output files
+LIST/
+OUTP/
+PARAM/
+SIMUL/
